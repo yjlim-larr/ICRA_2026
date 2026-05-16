@@ -13,6 +13,9 @@ import astroExpressiveCode from "astro-expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://yjlim-larr.github.io",
+  base: "/ICRA_2026/",
+
   vite: {
     plugins: [tailwindcss()],
   },
