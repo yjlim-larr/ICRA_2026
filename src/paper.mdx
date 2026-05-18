@@ -100,13 +100,13 @@ Driving without considering a user's preferred separation distance from surround
 Our framework consists of three stages, illustrated by the <span style={{ color: "magenta" }}>magenta</span>, <span style={{ color: "cyan" }}>cyan</span>, and <span style={{ color: "orange" }}>orange</span> shaded regions, respectively. 
 <ol style={{ textAlign: "left", paddingLeft: "1.25rem", marginTop: "0.5rem" }}>
   <li>
-    <span style={{ color: "magenta" }}>The first stage (questionnaire stage)</span> collects the user-preferred clearance margin through a questionnaire.
+    <span style={{ color: "magenta" }}>The first stage (questionnaire stage)</span> collects the user-preferred clearance margin through a systemically designed questionnaire.
     The questionnaire is available [here](https://docs.google.com/forms/d/e/1FAIpQLSfFUCmlLn1dzrp17jE-ugcUBpI16Ywin6hH7Mu2zTBXsjOh2A/viewform?usp=dialog).
   </li>
 
   <li>
     <span style={{ color: "cyan" }}>The second stage (parallel trajectory optimization stage)</span> takes the questionnaire responses and the current driving scenario as inputs.
-    The resulting preferences are incorporated as clearance constraints in the optimal control problem, which is then decomposed into scenario-specific subproblems.
+    The resulting preferences are incorporated as clearance constraints in the optimal control problem, which is then decomposed into scenario-specific subproblems for real-time implementation.
   </li>
 
   <li>
